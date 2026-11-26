@@ -1,0 +1,9 @@
+# robots.txt for Noor Quran Learning Academy
+# https://noor-quran-learning-academy.vercel.app
+
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Sitemaps
+Sitemap: https://noor-quran-learning-academy.vercel.app/sitemap.xml
