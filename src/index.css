@@ -1,0 +1,171 @@
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #C59B27;
+  --color-accent-soft: #FFEFD2;
+  --color-success: #1B6E3E;
+  --color-on-success: #FFFFFF;
+
+  --color-light-primary: #004225;
+  --color-light-on-primary: #FFFFFF;
+  --color-light-primary-container: #0A5C36;
+  --color-light-on-primary-container: #89D2A2;
+  --color-light-secondary: #775A00;
+  --color-light-on-secondary: #FFFFFF;
+  --color-light-secondary-container: #FECE57;
+  --color-light-on-secondary-container: #735700;
+  --color-light-tertiary: #642328;
+  --color-light-on-tertiary: #FFFFFF;
+  --color-light-tertiary-container: #81393D;
+  --color-light-on-tertiary-container: #FFACAE;
+  --color-light-error: #BA1A1A;
+  --color-light-on-error: #FFFFFF;
+  --color-light-error-container: #FFDAD6;
+  --color-light-on-error-container: #93000A;
+  --color-light-background: #FCF9F2;
+  --color-light-on-background: #1C1C18;
+  --color-light-surface: #FCF9F2;
+  --color-light-surface-dim: #DCDAD3;
+  --color-light-surface-bright: #FCF9F2;
+  --color-light-surface-container-lowest: #FFFFFF;
+  --color-light-surface-container-low: #F6F3EC;
+  --color-light-surface-container: #F0EEE7;
+  --color-light-surface-container-high: #EBE8E1;
+  --color-light-surface-container-highest: #E5E2DB;
+  --color-light-on-surface: #1C1C18;
+  --color-light-surface-variant: #DBE5DB;
+  --color-light-on-surface-variant: #404941;
+  --color-light-outline: #707A71;
+  --color-light-outline-variant: #BFC9BF;
+  --color-light-inverse-surface: #31312C;
+  --color-light-inverse-on-surface: #F3F0EA;
+  --color-light-inverse-primary: #8DD6A6;
+
+  --radius-sm: 4px;
+  --radius-DEFAULT: 8px;
+  --radius: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  --spacing-gutter-xs: 4px;
+  --spacing-gutter-sm: 8px;
+  --spacing-gutter-md: 16px;
+  --spacing-gutter-lg: 24px;
+  --spacing-gutter-xl: 32px;
+  --spacing-section: 64px;
+  --spacing-page-margin: 24px;
+
+  --font-display: "Playfair", serif;
+  --font-headline: "Playfair", serif;
+  --font-title: "Poppins", sans-serif;
+  --font-body: "Poppins", sans-serif;
+  --font-label: "Poppins", sans-serif;
+  --font-mono: "Source Code Pro", monospace;
+
+  --text-display-lg: 52px;
+  --text-display-lg--line-height: 60px;
+  --text-display-lg--letter-spacing: -0.5px;
+  --text-display-lg--font-weight: 700;
+
+  --text-display-lg-mobile: 32px;
+  --text-display-lg-mobile--line-height: 40px;
+  --text-display-lg-mobile--letter-spacing: -0.25px;
+  --text-display-lg-mobile--font-weight: 700;
+
+  --text-headline-lg: 36px;
+  --text-headline-lg--line-height: 44px;
+  --text-headline-lg--letter-spacing: -0.25px;
+  --text-headline-lg--font-weight: 700;
+
+  --text-headline-lg-mobile: 28px;
+  --text-headline-lg-mobile--line-height: 36px;
+  --text-headline-lg-mobile--letter-spacing: 0px;
+  --text-headline-lg-mobile--font-weight: 700;
+
+  --text-headline-md: 28px;
+  --text-headline-md--line-height: 36px;
+  --text-headline-md--letter-spacing: 0px;
+  --text-headline-md--font-weight: 600;
+
+  --text-title-lg: 20px;
+  --text-title-lg--line-height: 28px;
+  --text-title-lg--letter-spacing: 0px;
+  --text-title-lg--font-weight: 600;
+
+  --text-title-md: 16px;
+  --text-title-md--line-height: 24px;
+  --text-title-md--letter-spacing: 0.1px;
+  --text-title-md--font-weight: 600;
+
+  --text-body-lg: 17px;
+  --text-body-lg--line-height: 28px;
+  --text-body-lg--letter-spacing: 0px;
+  --text-body-lg--font-weight: 400;
+
+  --text-body-md: 15px;
+  --text-body-md--line-height: 24px;
+  --text-body-md--letter-spacing: 0.1px;
+  --text-body-md--font-weight: 400;
+
+  --text-label-lg: 14px;
+  --text-label-lg--line-height: 20px;
+  --text-label-lg--letter-spacing: 0.1px;
+  --text-label-lg--font-weight: 600;
+
+  --text-label-sm: 12px;
+  --text-label-sm--line-height: 16px;
+  --text-label-sm--letter-spacing: 0.25px;
+  --text-label-sm--font-weight: 500;
+
+  --text-mono-md: 14px;
+  --text-mono-md--line-height: 20px;
+  --text-mono-md--letter-spacing: 0px;
+  --text-mono-md--font-weight: 500;
+
+  --duration-state-change: 150ms;
+  --duration-surface-enter: 240ms;
+  --ease-state-change: ease-out;
+  --ease-surface-enter: cubic-bezier(0.2, 0, 0, 1);
+}
+
+.material-symbols-outlined {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1 !important;
+  box-sizing: content-box;
+  overflow: hidden;
+  white-space: nowrap;
+  direction: ltr;
+  vertical-align: middle;
+}
+
+.font-arabic {
+  font-family: "Amiri", serif;
+  line-height: 2.2;
+}
+
+html[lang="ur"] body {
+  font-family: "Noto Nastaliq Urdu", "Poppins", sans-serif;
+  line-height: 2;
+}
+
+html[lang="ur"] .font-headline,
+html[lang="ur"] .font-display {
+  font-family: "Noto Nastaliq Urdu", "Playfair", serif;
+  line-height: 1.8;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid #9e751d;
+  outline-offset: 2px;
+}
+
+button:active,
+a[class*="bg-"]:active {
+  transform: scale(0.99);
+}

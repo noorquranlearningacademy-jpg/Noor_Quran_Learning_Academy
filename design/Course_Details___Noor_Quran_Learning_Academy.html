@@ -1,0 +1,757 @@
+<!DOCTYPE html><html lang="en" dir="ltr"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Details — Noor Quran Learning Academy</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config" data-stitch-original-src="b0c02740ec1b1662===../../tailwind.config.js">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'accent': '#C59B27',
+        'accent-soft': '#FFEFD2',
+        'success': '#1B6E3E',
+        'on-success': '#FFFFFF',
+        'light-primary': '#004225',
+        'light-on-primary': '#FFFFFF',
+        'light-primary-container': '#0A5C36',
+        'light-on-primary-container': '#89D2A2',
+        'light-secondary': '#775A00',
+        'light-on-secondary': '#FFFFFF',
+        'light-secondary-container': '#FECE57',
+        'light-on-secondary-container': '#735700',
+        'light-tertiary': '#642328',
+        'light-on-tertiary': '#FFFFFF',
+        'light-tertiary-container': '#81393D',
+        'light-on-tertiary-container': '#FFACAE',
+        'light-error': '#BA1A1A',
+        'light-on-error': '#FFFFFF',
+        'light-error-container': '#FFDAD6',
+        'light-on-error-container': '#93000A',
+        'light-background': '#FCF9F2',
+        'light-on-background': '#1C1C18',
+        'light-surface': '#FCF9F2',
+        'light-surface-dim': '#DCDAD3',
+        'light-surface-bright': '#FCF9F2',
+        'light-surface-container-lowest': '#FFFFFF',
+        'light-surface-container-low': '#F6F3EC',
+        'light-surface-container': '#F0EEE7',
+        'light-surface-container-high': '#EBE8E1',
+        'light-surface-container-highest': '#E5E2DB',
+        'light-on-surface': '#1C1C18',
+        'light-surface-variant': '#DBE5DB',
+        'light-on-surface-variant': '#404941',
+        'light-outline': '#707A71',
+        'light-outline-variant': '#BFC9BF',
+        'light-inverse-surface': '#31312C',
+        'light-inverse-on-surface': '#F3F0EA',
+        'light-inverse-primary': '#8DD6A6',
+        'light-shadow': '#000000',
+        'light-scrim': '#000000',
+        'dark-primary': '#8DD6A6',
+        'dark-on-primary': '#00391E',
+        'dark-primary-container': '#0A5C36',
+        'dark-on-primary-container': '#89D2A2',
+        'dark-secondary': '#EEC14B',
+        'dark-on-secondary': '#3E2E00',
+        'dark-secondary-container': '#B38B14',
+        'dark-on-secondary-container': '#251A00',
+        'dark-tertiary': '#FFB3B4',
+        'dark-on-tertiary': '#591A20',
+        'dark-tertiary-container': '#81393D',
+        'dark-on-tertiary-container': '#FFACAE',
+        'dark-error': '#FFB4AB',
+        'dark-on-error': '#690005',
+        'dark-error-container': '#93000A',
+        'dark-on-error-container': '#FFDAD6',
+        'dark-background': '#131410',
+        'dark-on-background': '#E5E2DB',
+        'dark-surface': '#131410',
+        'dark-surface-dim': '#131410',
+        'dark-surface-bright': '#3A3935',
+        'dark-surface-container-lowest': '#0E0E0B',
+        'dark-surface-container-low': '#1C1C18',
+        'dark-surface-container': '#20201C',
+        'dark-surface-container-high': '#2A2A26',
+        'dark-surface-container-highest': '#353530',
+        'dark-on-surface': '#E5E2DB',
+        'dark-surface-variant': '#404941',
+        'dark-on-surface-variant': '#BFC9BF',
+        'dark-outline': '#89938A',
+        'dark-outline-variant': '#404941',
+        'dark-inverse-surface': '#E5E2DB',
+        'dark-inverse-on-surface': '#31312C',
+        'dark-inverse-primary': '#216B43',
+        'dark-shadow': '#000000',
+        'dark-scrim': '#000000',
+      },
+      borderRadius: {
+        'sm': '4px',
+        'DEFAULT': '8px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '24px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '16px',
+        'gutter-lg': '24px',
+        'gutter-xl': '32px',
+        'section': '64px',
+        'page-margin': '24px',
+      },
+      fontFamily: {
+        'display': ['"Playfair"', 'sans-serif'],
+        'headline': ['"Playfair"', 'sans-serif'],
+        'title': ['"Poppins"', 'sans-serif'],
+        'body': ['"Poppins"', 'sans-serif'],
+        'label': ['"Poppins"', 'sans-serif'],
+        'mono': ['"Source Code Pro"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['52px', { lineHeight: '60px', letterSpacing: '-0.5px', fontWeight: '700' }],
+        'display-lg-mobile': ['32px', { lineHeight: '40px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'headline-lg': ['36px', { lineHeight: '44px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'headline-lg-mobile': ['28px', { lineHeight: '36px', letterSpacing: '0px', fontWeight: '700' }],
+        'headline-md': ['28px', { lineHeight: '36px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-lg': ['20px', { lineHeight: '28px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-md': ['16px', { lineHeight: '24px', letterSpacing: '0.1px', fontWeight: '600' }],
+        'body-lg': ['17px', { lineHeight: '28px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['15px', { lineHeight: '24px', letterSpacing: '0.1px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.1px', fontWeight: '600' }],
+        'label-sm': ['12px', { lineHeight: '16px', letterSpacing: '0.25px', fontWeight: '500' }],
+        'mono-md': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'state-change': '150ms',
+        'surface-enter': '240ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'ease-out',
+        'surface-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair:wght@600;700&amp;family=Poppins:wght@400;500;600&amp;family=Source+Code+Pro:wght@500&amp;family=Noto+Nastaliq+Urdu:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>
+    .material-symbols-outlined { display: inline-block; width: 1em; height: 1em; line-height: 1 !important; box-sizing: content-box; overflow: hidden; white-space: nowrap; direction: ltr; vertical-align: middle; }
+    html[lang="ur"] body { font-family: 'Noto Nastaliq Urdu', 'Poppins', sans-serif; line-height: 2; }
+    html[lang="ur"] .font-headline, html[lang="ur"] .font-display { font-family: 'Noto Nastaliq Urdu', 'Playfair', serif; line-height: 1.8; }
+    a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid #9e751d; outline-offset: 2px; }
+    button:active, a[class*="bg-"]:active { transform: scale(0.99); }
+  </style>
+</head>
+<body class="bg-light-surface text-light-on-surface font-body min-h-screen flex flex-col">
+
+  <!-- Shared Top Navigation Bar with Dropdowns -->
+  <header class="sticky top-0 z-40 bg-light-surface-container-lowest border-b border-light-outline-variant">
+    <div class="max-w-[1200px] mx-auto px-gutter-md md:px-page-margin py-3 flex items-center justify-between gap-4">
+      <a href="../home/Home.html" class="flex items-center gap-3 shrink-0">
+        <span class="w-10 h-10 rounded-md bg-light-primary text-light-on-primary flex items-center justify-center shrink-0" aria-hidden="true">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <polygon points="12,2 14.9,8.1 21.5,9 16.7,13.6 17.9,20.2 12,17 6.1,20.2 7.3,13.6 2.5,9 9.1,8.1"></polygon>
+            <circle cx="12" cy="12" r="2.2" fill="currentColor" stroke="none"></circle>
+          </svg>
+        </span>
+        <span class="flex flex-col">
+          <span class="font-headline text-title-md text-light-primary leading-tight" data-i18n="brand_name">Noor Quran</span>
+          <span class="text-label-sm text-light-on-surface-variant leading-tight" data-i18n="brand_sub">Learning Academy</span>
+        </span>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-5" aria-label="Primary">
+        <a href="../home/Home.html" class="font-label text-label-lg text-light-on-surface-variant hover:text-light-primary transition-colors duration-state-change" data-i18n="nav_home">Home</a>
+
+        <div class="relative group">
+          <button type="button" class="inline-flex items-center gap-1 font-label text-label-lg text-light-primary border-b-2 border-light-primary pb-0.5" aria-haspopup="true">
+            <span data-i18n="nav_courses">Courses</span>
+            <span class="material-symbols-outlined text-title-md" aria-hidden="true">expand_more</span>
+          </button>
+          <div class="hidden group-hover:flex group-focus-within:flex flex-col absolute top-full start-0 pt-2 w-60 z-50">
+            <div class="bg-light-surface-container-lowest border border-light-outline-variant rounded-md py-2 flex flex-col">
+              <a href="../courses/Courses.html" class="px-4 py-2 text-body-md text-light-primary font-medium hover:bg-light-surface-container-low" data-i18n="nav_all_courses">All Courses</a>
+              <a href="../course-detail/CourseDetail.html?course=noorani-qaida" class="px-4 py-2 text-body-md text-light-on-surface-variant hover:bg-light-surface-container-low hover:text-light-primary">Noorani Qaida</a>
+              <a href="../course-detail/CourseDetail.html?course=nazra-quran" class="px-4 py-2 text-body-md text-light-on-surface-variant hover:bg-light-surface-container-low hover:text-light-primary">Nazra Quran</a>
+              <a href="../course-detail/CourseDetail.html?course=hifz-ul-quran" class="px-4 py-2 text-body-md text-light-on-surface-variant hover:bg-light-surface-container-low hover:text-light-primary">Hifz-ul-Quran</a>
+              <a href="../course-detail/CourseDetail.html?course=quran-with-tajweed" class="px-4 py-2 text-body-md text-light-on-surface-variant hover:bg-light-surface-container-low hover:text-light-primary">Quran with Tajweed</a>
+              <a href="../course-detail/CourseDetail.html?course=quran-with-urdu-translation" class="px-4 py-2 text-body-md text-light-on-surface-variant hover:bg-light-surface-container-low hover:text-light-primary">Urdu Translation</a>
+              <a href="../course-detail/CourseDetail.html?course=quran-with-english-translation" class="px-4 py-2 text-body-md text-light-on-surface-variant hover:bg-light-surface-container-low hover:text-light-primary">English Translation</a>
+              <a href="../tafseer/QuranTafseer.html" class="px-4 py-2 text-body-md text-light-on-surface-variant hover:bg-light-surface-container-low hover:text-light-primary">Quran Tafseer</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative group">
+          <button type="button" class="inline-flex items-center gap-1 font-label text-label-lg text-light-on-surface-variant hover:text-light-primary transition-colors duration-state-change" aria-haspopup="true">
+            <span data-i18n="nav_learning">Quran Learning</span>
+            <span class="material-symbols-outlined text-title-md" aria-hidden="true">expand_more</span>
+          </button>
+          <div class="hidden group-hover:flex group-focus-within:flex flex-col absolute top-full start-0 pt-2 w-56 z-50">
+            <div class="bg-light-surface-container-lowest border border-light-outline-variant rounded-md py-2 flex flex-col">
+              <a href="../read-quran/ReadQuran.html" class="px-4 py-2 text-body-md text-light-on-surface-variant hover:bg-light-surface-container-low hover:text-light-primary" data-i18n="nav_read_quran">Read Quran</a>
+              <a href="../tafseer/QuranTafseer.html" class="px-4 py-2 text-body-md text-light-on-surface-variant hover:bg-light-surface-container-low hover:text-light-primary" data-i18n="nav_tafseer">Quran Tafseer</a>
+              <a href="../online-classes/OnlineClasses.html" class="px-4 py-2 text-body-md text-light-on-surface-variant hover:bg-light-surface-container-low hover:text-light-primary" data-i18n="nav_online">Online Classes</a>
+              <a href="../home-tuition/HomeTuition.html" class="px-4 py-2 text-body-md text-light-on-surface-variant hover:bg-light-surface-container-low hover:text-light-primary" data-i18n="nav_home_tuition">Home Tuition</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="../teachers/Teachers.html" class="font-label text-label-lg text-light-on-surface-variant hover:text-light-primary transition-colors duration-state-change" data-i18n="nav_teachers">Teachers</a>
+        <a href="../fees/FeeInformation.html" class="font-label text-label-lg text-light-on-surface-variant hover:text-light-primary transition-colors duration-state-change" data-i18n="nav_fees">Fee Info</a>
+        <a href="../about/AboutUs.html" class="font-label text-label-lg text-light-on-surface-variant hover:text-light-primary transition-colors duration-state-change" data-i18n="nav_about">About Us</a>
+        <a href="../contact/Contact.html" class="font-label text-label-lg text-light-on-surface-variant hover:text-light-primary transition-colors duration-state-change" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3 shrink-0">
+        <div class="inline-flex items-center rounded-full border border-light-outline-variant bg-light-surface-container-low p-0.5" role="group" aria-label="Language switcher">
+          <button type="button" id="lang-en-btn" onclick="setLanguage(&#39;en&#39;)" class="px-3 py-1 rounded-full font-label text-label-sm bg-light-primary text-light-on-primary transition-colors duration-state-change">EN</button>
+          <button type="button" id="lang-ur-btn" onclick="setLanguage(&#39;ur&#39;)" class="px-3 py-1 rounded-full font-label text-label-sm text-light-on-surface-variant hover:text-light-primary transition-colors duration-state-change">اردو</button>
+        </div>
+
+        <a href="../free-trial/FreeTrialBooking.html" class="hidden sm:inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-DEFAULT bg-light-primary text-light-on-primary font-label text-label-lg hover:bg-light-primary-container transition-colors duration-state-change">
+          <span data-design-text-token="label-lg" data-i18n="nav_cta">Book Free Trial</span>
+        </a>
+
+        <button type="button" id="mobile-menu-toggle" onclick="toggleMobileMenu()" data-component-id="button-icon" data-component-type="button" data-component-variant="icon" aria-label="Toggle navigation menu" aria-expanded="false" class="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-DEFAULT bg-light-surface-container-lowest border border-light-outline-variant text-light-on-surface hover:bg-light-surface-container">
+          <span class="material-symbols-outlined text-title-lg" aria-hidden="true">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-light-outline-variant bg-light-surface-container-lowest px-gutter-md py-4">
+      <nav class="flex flex-col gap-2" aria-label="Mobile navigation">
+        <a href="../home/Home.html" class="font-label text-label-lg text-light-on-surface-variant py-1.5" data-i18n="nav_home">Home</a>
+        <a href="../courses/Courses.html" class="font-label text-label-lg text-light-primary py-1.5" data-i18n="nav_courses">Courses</a>
+        <a href="../read-quran/ReadQuran.html" class="font-label text-label-lg text-light-on-surface-variant py-1.5" data-i18n="nav_read_quran">Read Quran</a>
+        <a href="../tafseer/QuranTafseer.html" class="font-label text-label-lg text-light-on-surface-variant py-1.5" data-i18n="nav_tafseer">Quran Tafseer</a>
+        <a href="../online-classes/OnlineClasses.html" class="font-label text-label-lg text-light-on-surface-variant py-1.5" data-i18n="nav_online">Online Classes</a>
+        <a href="../home-tuition/HomeTuition.html" class="font-label text-label-lg text-light-on-surface-variant py-1.5" data-i18n="nav_home_tuition">Home Tuition</a>
+        <a href="../teachers/Teachers.html" class="font-label text-label-lg text-light-on-surface-variant py-1.5" data-i18n="nav_teachers">Teachers</a>
+        <a href="../fees/FeeInformation.html" class="font-label text-label-lg text-light-on-surface-variant py-1.5" data-i18n="nav_fees">Fee Info</a>
+        <a href="../about/AboutUs.html" class="font-label text-label-lg text-light-on-surface-variant py-1.5" data-i18n="nav_about">About Us</a>
+        <a href="../faqs/FAQs.html" class="font-label text-label-lg text-light-on-surface-variant py-1.5">FAQs</a>
+        <a href="../contact/Contact.html" class="font-label text-label-lg text-light-on-surface-variant py-1.5" data-i18n="nav_contact">Contact</a>
+        <a href="../free-trial/FreeTrialBooking.html" class="mt-2 inline-flex items-center justify-center px-5 py-2.5 rounded-DEFAULT bg-light-primary text-light-on-primary font-label text-label-lg" data-i18n="nav_cta">Book Free Trial</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-1">
+    <!-- Breadcrumb + Hero -->
+    <section class="bg-light-surface-container-low border-b border-light-outline-variant py-10">
+      <div class="max-w-[1200px] mx-auto px-gutter-md md:px-page-margin flex flex-col gap-5">
+        <a href="../courses/Courses.html" class="inline-flex items-center gap-1.5 font-label text-label-lg text-light-primary hover:underline self-start">
+          <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_back</span>
+          <span data-i18n="back_courses">Back to All Courses</span>
+        </a>
+
+        <!-- Course Switcher Tabs -->
+        <div class="flex flex-wrap gap-2" role="navigation" aria-label="Select course">
+          <button type="button" onclick="selectCourse(&#39;noorani-qaida&#39;)" data-course-tab="noorani-qaida" class="px-3.5 py-1.5 rounded-full border border-light-outline-variant bg-light-surface-container-lowest font-label text-label-sm text-light-on-surface-variant hover:border-light-primary">Noorani Qaida</button>
+          <button type="button" onclick="selectCourse(&#39;nazra-quran&#39;)" data-course-tab="nazra-quran" class="px-3.5 py-1.5 rounded-full border border-light-outline-variant bg-light-surface-container-lowest font-label text-label-sm text-light-on-surface-variant hover:border-light-primary">Nazra Quran</button>
+          <button type="button" onclick="selectCourse(&#39;hifz-ul-quran&#39;)" data-course-tab="hifz-ul-quran" class="px-3.5 py-1.5 rounded-full border border-light-outline-variant bg-light-surface-container-lowest font-label text-label-sm text-light-on-surface-variant hover:border-light-primary">Hifz-ul-Quran</button>
+          <button type="button" onclick="selectCourse(&#39;quran-with-tajweed&#39;)" data-course-tab="quran-with-tajweed" class="px-3.5 py-1.5 rounded-full border border-light-outline-variant bg-light-surface-container-lowest font-label text-label-sm text-light-on-surface-variant hover:border-light-primary">Quran with Tajweed</button>
+          <button type="button" onclick="selectCourse(&#39;quran-with-urdu-translation&#39;)" data-course-tab="quran-with-urdu-translation" class="px-3.5 py-1.5 rounded-full border border-light-outline-variant bg-light-surface-container-lowest font-label text-label-sm text-light-on-surface-variant hover:border-light-primary">Urdu Translation</button>
+          <button type="button" onclick="selectCourse(&#39;quran-with-english-translation&#39;)" data-course-tab="quran-with-english-translation" class="px-3.5 py-1.5 rounded-full border border-light-outline-variant bg-light-surface-container-lowest font-label text-label-sm text-light-on-surface-variant hover:border-light-primary">English Translation</button>
+          <button type="button" onclick="selectCourse(&#39;quran-tafseer&#39;)" data-course-tab="quran-tafseer" class="px-3.5 py-1.5 rounded-full border border-light-outline-variant bg-light-surface-container-lowest font-label text-label-sm text-light-on-surface-variant hover:border-light-primary">Quran Tafseer</button>
+        </div>
+
+        <div class="flex flex-col gap-3 max-w-3xl">
+          <span id="cd-level" class="inline-flex self-start px-3 py-1 rounded-full bg-accent-soft text-light-secondary border border-accent font-label text-label-sm">Suitable for: Young Children &amp; Beginners</span>
+          <h1 id="cd-title" class="font-display text-display-lg-mobile md:text-display-lg text-light-primary">Noorani Qaida</h1>
+          <p id="cd-summary" class="text-body-lg text-light-on-surface-variant">Foundational course teaching Arabic letters, vowels (Harakat), joining rules, and correct pronunciation from the very first lesson.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Details Grid -->
+    <section class="py-section max-w-[1200px] mx-auto px-gutter-md md:px-page-margin grid grid-cols-1 lg:grid-cols-12 gap-8">
+      <div class="lg:col-span-8 flex flex-col gap-6">
+        <div class="bg-light-surface-container-lowest border border-light-outline-variant rounded-lg p-6 md:p-8 flex flex-col gap-4">
+          <h2 class="font-headline text-headline-md text-light-primary" data-i18n="cd_what_title">What Students Will Learn</h2>
+          <ul id="cd-syllabus" class="flex flex-col gap-3 text-body-md text-light-on-surface-variant"></ul>
+        </div>
+
+        <div class="bg-light-surface-container-lowest border border-light-outline-variant rounded-lg p-6 md:p-8 flex flex-col gap-4">
+          <h2 class="font-headline text-headline-md text-light-primary" data-i18n="cd_benefits_title">Key Course Benefits</h2>
+          <ul id="cd-benefits" class="flex flex-col gap-3 text-body-md text-light-on-surface-variant"></ul>
+        </div>
+      </div>
+
+      <aside class="lg:col-span-4 flex flex-col gap-6">
+        <div class="bg-light-surface-container-lowest border border-light-outline-variant rounded-lg p-6 flex flex-col gap-4">
+          <h2 class="font-title text-title-lg text-light-primary" data-i18n="cd_format_title">Class Format &amp; Schedule</h2>
+          <dl class="flex flex-col gap-3 text-body-md">
+            <div class="flex justify-between gap-2 border-b border-light-outline-variant pb-2">
+              <dt class="text-light-on-surface-variant" data-i18n="cd_lbl_days">Weekly Schedule</dt>
+              <dd class="font-medium text-light-on-surface" data-i18n="cd_val_days">4 Days / Week</dd>
+            </div>
+            <div class="flex justify-between gap-2 border-b border-light-outline-variant pb-2">
+              <dt class="text-light-on-surface-variant" data-i18n="cd_lbl_dur">Duration</dt>
+              <dd class="font-medium text-light-on-surface" data-i18n="cd_val_dur">1 Hour (Adjustable)</dd>
+            </div>
+            <div class="flex justify-between gap-2 border-b border-light-outline-variant pb-2">
+              <dt class="text-light-on-surface-variant" data-i18n="cd_lbl_mode">Class Type</dt>
+              <dd class="font-medium text-light-on-surface" data-i18n="cd_val_mode">1-on-1 or Group (Max 4)</dd>
+            </div>
+            <div class="flex justify-between gap-2 border-b border-light-outline-variant pb-2">
+              <dt class="text-light-on-surface-variant" data-i18n="cd_lbl_lang">Languages</dt>
+              <dd class="font-medium text-light-on-surface" data-i18n="cd_val_lang">Urdu &amp; English</dd>
+            </div>
+            <div class="flex justify-between gap-2">
+              <dt class="text-light-on-surface-variant" data-i18n="cd_lbl_teachers">Teachers</dt>
+              <dd class="font-medium text-light-on-surface" data-i18n="cd_val_teachers">Male &amp; Female</dd>
+            </div>
+          </dl>
+
+          <a id="cd-book-btn" href="../free-trial/FreeTrialBooking.html?course=Noorani%20Qaida" data-component-id="button-primary" data-component-type="button" data-component-variant="primary" class="mt-2 inline-flex items-center justify-center w-full px-6 py-3 rounded-DEFAULT bg-light-primary text-light-on-primary font-label text-label-lg hover:bg-light-primary-container transition-colors duration-state-change">
+            <span data-design-text-token="label-lg" data-i18n="cd_book_btn">Book 3-Day Free Trial</span>
+          </a>
+          <a href="../fees/FeeInformation.html" class="inline-flex items-center justify-center w-full px-6 py-2.5 rounded-DEFAULT bg-light-surface-container-low text-light-primary border border-light-outline-variant font-label text-label-lg hover:border-light-primary transition-colors duration-state-change" data-i18n="cd_fee_btn">
+            Request Fee Details
+          </a>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <!-- Shared Multi-Page Footer -->
+  <footer class="bg-light-surface-container-low border-t border-light-outline-variant py-12">
+    <div class="max-w-[1200px] mx-auto px-gutter-md md:px-page-margin grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div class="flex flex-col gap-3">
+        <p class="font-headline text-title-lg text-light-primary" data-i18n="footer_brand">Noor Quran Learning Academy</p>
+        <p class="text-body-md text-light-on-surface-variant" data-i18n="footer_tagline">Learn the Quran. Understand the Quran. Live by the Quran.</p>
+        <p class="text-label-sm text-light-on-surface-variant" data-i18n="footer_schedule">Regular Schedule: 4 days/week (1 hour standard). Fri–Sun off (by mutual arrangement only).</p>
+      </div>
+      <div class="flex flex-col gap-2">
+        <h3 class="font-title text-title-md text-light-on-surface" data-i18n="footer_col_academy">Academy</h3>
+        <a href="../home/Home.html" class="text-body-md text-light-on-surface-variant hover:text-light-primary" data-i18n="nav_home">Home</a>
+        <a href="../about/AboutUs.html" class="text-body-md text-light-on-surface-variant hover:text-light-primary" data-i18n="nav_about">About Us</a>
+        <a href="../courses/Courses.html" class="text-body-md text-light-on-surface-variant hover:text-light-primary" data-i18n="nav_courses">Courses</a>
+        <a href="../teachers/Teachers.html" class="text-body-md text-light-on-surface-variant hover:text-light-primary" data-i18n="nav_teachers">Teachers</a>
+        <a href="../fees/FeeInformation.html" class="text-body-md text-light-on-surface-variant hover:text-light-primary" data-i18n="nav_fees">Fee Information</a>
+        <a href="../free-trial/FreeTrialBooking.html" class="text-body-md text-light-on-surface-variant hover:text-light-primary" data-i18n="nav_cta">Book Free Trial</a>
+      </div>
+      <div class="flex flex-col gap-2">
+        <h3 class="font-title text-title-md text-light-on-surface" data-i18n="footer_col_learning">Quran Learning &amp; Support</h3>
+        <a href="../read-quran/ReadQuran.html" class="text-body-md text-light-on-surface-variant hover:text-light-primary" data-i18n="nav_read_quran">Read Quran</a>
+        <a href="../tafseer/QuranTafseer.html" class="text-body-md text-light-on-surface-variant hover:text-light-primary" data-i18n="nav_tafseer">Quran Tafseer</a>
+        <a href="../online-classes/OnlineClasses.html" class="text-body-md text-light-on-surface-variant hover:text-light-primary" data-i18n="nav_online">Online Classes</a>
+        <a href="../home-tuition/HomeTuition.html" class="text-body-md text-light-on-surface-variant hover:text-light-primary" data-i18n="nav_home_tuition">Home Tuition</a>
+        <a href="../faqs/FAQs.html" class="text-body-md text-light-on-surface-variant hover:text-light-primary">FAQs</a>
+        <a href="../student-dashboard/StudentDashboard.html" class="text-body-md text-light-on-surface-variant hover:text-light-primary" data-i18n="nav_dashboard">Student Dashboard (Planned)</a>
+      </div>
+      <div class="flex flex-col gap-2">
+        <h3 class="font-title text-title-md text-light-on-surface" data-i18n="footer_contact_title">Contact &amp; Legal</h3>
+        <a href="https://wa.me/923000000000" target="_blank" rel="noopener noreferrer" data-academy-wa="true" class="text-body-md text-light-on-surface-variant hover:text-light-primary">WhatsApp: +92 300 0000000</a>
+        <a href="mailto:info@noorquran-placeholder.org" data-academy-email="true" class="text-body-md text-light-on-surface-variant hover:text-light-primary">Email: info@noorquran-placeholder.org</a>
+        <a href="../contact/Contact.html" class="text-body-md text-light-on-surface-variant hover:text-light-primary" data-i18n="nav_contact">Contact Us</a>
+        <a href="../privacy/PrivacyPolicy.html" class="text-body-md text-light-on-surface-variant hover:text-light-primary" data-i18n="nav_privacy">Privacy Policy</a>
+        <a href="../terms/TermsAndConditions.html" class="text-body-md text-light-on-surface-variant hover:text-light-primary" data-i18n="nav_terms">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const COURSE_DATA = {
+      "noorani-qaida": {
+        bookingValue: "Noorani Qaida",
+        level: { en: "Suitable for: Young Children & Beginners", ur: "مناسب: چھوٹے بچے اور مبتدی" },
+        title: { en: "Noorani Qaida", ur: "نورانی قاعدہ" },
+        summary: {
+          en: "Foundational course teaching Arabic letters, vowels (Harakat), joining rules, and correct pronunciation from the very first lesson.",
+          ur: "پہلے سبق سے ہی عربی حروف، حرکات، حروف جوڑنے کے قواعد اور درست تلفظ سکھانے کا بنیادی کورس۔"
+        },
+        syllabus: {
+          en: ["Recognition of individual and compound Arabic letters", "Short vowels (Fatha, Kasra, Damma), Sukoon, and Tanween", "Madd, Shaddah, and foundational Makharij (articulation points)", "Step-by-step practice reading short Quranic words and verses"],
+          ur: ["مفرد اور مرکب عربی حروف کی پہچان", "حرکات، سکون اور تنوین کی مکمل مشق", "مد، تشدید اور بنیادی مخارج", "قرآنی الفاظ اور مختصر آیات پڑھنے کی بتدریج مشق"]
+        },
+        benefits: {
+          en: ["Builds strong pronunciation habits before starting the Quran", "Patient, child-friendly pacing with gentle teacher feedback", "Available in 1-on-1 or small group format (max 4 students)"],
+          ur: ["قرآن شروع کرنے سے پہلے درست تلفظ کی مضبوط بنیاد", "بچوں کے مزاج کے مطابق نرم اور صبر آزما تدریس", "انفرادی یا 4 طلبہ تک کے مختصر گروپ میں دستیاب"]
+        }
+      },
+      "nazra-quran": {
+        bookingValue: "Nazra Quran",
+        level: { en: "Suitable for: Children & Adults", ur: "مناسب: بچے اور بڑے" },
+        title: { en: "Nazra Quran", ur: "ناظرہ قرآن" },
+        summary: {
+          en: "Complete Quran reading from Juz 1 to Juz 30 with steady teacher correction. Can be paired with Tajweed rules upon request.",
+          ur: "پہلے سپارے سے تیسویں سپارے تک استاد کی نگرانی میں مکمل قرآن پڑھنا۔ ضرورت کے مطابق تجوید بھی شامل کی جا سکتی ہے۔"
+        },
+        syllabus: {
+          en: ["Guided reading from Juz 1 through Juz 30", "Real-time correction of fluency, stops (Waqf), and rhythm", "Optional integration of practical Tajweed rules alongside reading", "Daily revision of previous lessons for steady retention"],
+          ur: ["پہلے سپارے سے تیسویں سپارے تک مکمل ناظرہ خوانی", "روانی، وقف اور درست ادائیگی کی فوری اصلاح", "طالب علم کی ضرورت کے مطابق تجوید کے قواعد کی شمولیت", "پچھلے اسباق کی باقاعدہ دہرائی"]
+        },
+        benefits: {
+          en: ["Develops confident, fluent Quran recitation", "Flexible pacing tailored to children and working adults", "Choice of male or female teacher in Urdu or English"],
+          ur: ["اعتماد اور روانی کے ساتھ تلاوت کی صلاحیت", "بچوں اور بڑوں کے لیے موزوں رفتار", "اردو یا انگریزی میں مرد یا خاتون استاد کا انتخاب"]
+        }
+      },
+      "hifz-ul-quran": {
+        bookingValue: "Hifz-ul-Quran",
+        level: { en: "Suitable for: Dedicated Children & Adults", ur: "مناسب: شوقین بچے اور بڑے" },
+        title: { en: "Hifz-ul-Quran", ur: "حفظِ قرآن" },
+        summary: {
+          en: "Structured Quran memorization (full Quran or selected Surahs) with daily Sabaq, Sabqi, and Manzil revision tracking.",
+          ur: "روزانہ سبق، سبقی اور منزل کے منظم نظام کے ساتھ مکمل قرآن یا منتخب سورتوں کا حفظ۔"
+        },
+        syllabus: {
+          en: ["Daily new memorization (Sabaq) tailored to student capacity", "Recent revision (Sabqi) to lock in current Juz", "Long-term revision (Manzil) for previously memorized Juz", "Full Quran Hifz or targeted Surahs (e.g., Juz Amma, Surah Yaseen, Mulk)"],
+          ur: ["طالب علم کی استعداد کے مطابق روزانہ نیا سبق", "حالیہ یاد کیے گئے حصے کی دہرائی (سبقی)", "پرانے سپاروں کی پختہ دہرائی (منزل)", "مکمل قرآن یا منتخب سورتوں کا حفظ"]
+        },
+        benefits: {
+          en: ["Systematic three-tier revision prevents forgetting", "Regular progress updates for parents", "Adjustable daily duration beyond the 1-hour standard upon request"],
+          ur: ["تین سطحی دہرائی کا منظم نظام", "والدین کو باقاعدہ کارکردگی کی اطلاع", "ضرورت کے مطابق کلاس کے وقت میں لچک"]
+        }
+      },
+      "quran-with-tajweed": {
+        bookingValue: "Quran with Tajweed",
+        level: { en: "Suitable for: All Levels (Separate or with Nazra)", ur: "مناسب: تمام سطحیں (الگ یا ناظرہ کے ساتھ)" },
+        title: { en: "Quran with Tajweed", ur: "قرآن مع تجوید" },
+        summary: {
+          en: "Focused study of Noon Sakinah, Meem Sakinah, Madd, Qalqalah, and Makharij—offered as a separate course or alongside Nazra Quran.",
+          ur: "نون ساکن، میم ساکن، مد، قلقلہ اور مخارج کی عملی مشق—الگ کورس یا ناظرہ قرآن کے ساتھ دستیاب۔"
+        },
+        syllabus: {
+          en: ["Articulation points (Makharij al-Huruf) and letter characteristics (Sifaat)", "Rules of Noon Sakinah & Tanween (Izhar, Idgham, Iqlab, Ikhfa)", "Rules of Meem Sakinah, Qalqalah, Tafkheem, and Tarqeeq", "Types of Madd and practical application during live recitation"],
+          ur: ["مخارج الحروف اور صفاتِ حروف کا تفصیلی مطالعہ", "نون ساکن و تنوین کے قواعد (اظہار، ادغام، اقلاب، اخفاء)", "میم ساکن، قلقلہ، تفخیم اور ترقیق", "مدود کی اقسام اور تلاوت میں عملی مشق"]
+        },
+        benefits: {
+          en: ["Can be taken standalone or integrated into Nazra Quran", "Corrects subtle pronunciation errors in Salah and daily recitation", "Clear explanations in either Urdu or English"],
+          ur: ["الگ کورس یا ناظرہ کے ساتھ پڑھنے کی سہولت", "نماز اور روزمرہ تلاوت کی درستگی", "اردو یا انگریزی میں آسان وضاحت"]
+        }
+      },
+      "quran-with-urdu-translation": {
+        bookingValue: "Quran with Urdu Translation",
+        level: { en: "Suitable for: Urdu-Speaking Youth & Adults", ur: "مناسب: اردو بولنے والے نوجوان اور بڑے" },
+        title: { en: "Quran with Urdu Translation", ur: "قرآن مع اردو ترجمہ" },
+        summary: {
+          en: "Word-by-word and contextual Urdu translation so students understand the direct message of the verses they recite.",
+          ur: "لفظ بہ لفظ اور با محاورہ اردو ترجمہ تاکہ طلبہ تلاوت کی جانے والی آیات کا پیغام سمجھ سکیں۔"
+        },
+        syllabus: {
+          en: ["Word-by-word Urdu meanings of frequently occurring Quranic vocabulary", "Idiomatic Urdu translation following sentence flow", "Key themes of each Surah and connection to daily Salah", "Interactive Q&A during 1-on-1 or small group sessions"],
+          ur: ["کثرت سے آنے والے قرآنی الفاظ کے لفظی معنی", "سلیس اور با محاورہ اردو ترجمہ", "سورتوں کے مرکزی مضامین اور نماز سے تعلق", "انفرادی یا مختصر گروپ میں سوال و جواب"]
+        },
+        benefits: {
+          en: ["Brings deeper focus (Khushu) to daily prayers", "Accessible for Urdu-speaking students worldwide", "Builds foundational Quranic Arabic vocabulary"],
+          ur: ["نماز میں خشوع و خضوع پیدا ہوتا ہے", "دنیا بھر میں اردو بولنے والے طلبہ کے لیے موزوں", "قرآنی عربی الفاظ کی پہچان میں مدد"]
+        }
+      },
+      "quran-with-english-translation": {
+        bookingValue: "Quran with English Translation",
+        level: { en: "Suitable for: English-Speaking Youth & Adults", ur: "مناسب: انگریزی بولنے والے طلبہ" },
+        title: { en: "Quran with English Translation", ur: "قرآن مع انگریزی ترجمہ" },
+        summary: {
+          en: "Accessible English translation designed for international students in the UK, USA, Canada, Europe, and English-medium learners.",
+          ur: "برطانیہ، امریکہ، کینیڈا، یورپ اور انگریزی میڈیم طلبہ کے لیے مستند اور آسان فہم انگریزی ترجمہ۔"
+        },
+        syllabus: {
+          en: ["Clear, accurate English translation of Quranic verses", "Key Arabic root words and recurring Quranic expressions", "Understanding Surah themes and moral guidance", "Discussion-friendly pacing for youth and adult learners"],
+          ur: ["قرآنی آیات کا واضح اور مستند انگریزی ترجمہ", "اہم عربی الفاظ اور اصطلاحات کا فہم", "سورتوں کے بنیادی پیغام اور اخلاقی رہنمائی", "نوجوانوں اور بڑوں کے لیے موزوں رفتار"]
+        },
+        benefits: {
+          en: ["Ideal for diaspora families raising children in English-speaking countries", "Connects recitation directly with comprehension", "Flexible scheduling across UK, US, Canada, and EU timezones"],
+          ur: ["بیرونِ ملک مقیم خاندانوں کے لیے بہترین", "تلاوت کو فہمِ قرآن سے جوڑتا ہے", "برطانیہ، امریکہ، کینیڈا اور یورپ کے اوقات کے مطابق شیڈول"]
+        }
+      },
+      "quran-tafseer": {
+        bookingValue: "Quran Tafseer",
+        level: { en: "Suitable for: Adults & Advanced Learners", ur: "مناسب: بڑے اور اعلیٰ سطح کے طلبہ" },
+        title: { en: "Quran Tafseer", ur: "تفسیرِ قرآن" },
+        summary: {
+          en: "In-depth explanation of Quranic verses, historical context (Asbab al-Nuzul), and practical guidance for applying the Quran in daily life.",
+          ur: "آیاتِ قرآنی کی گہری تشریح، شانِ نزول اور عملی زندگی میں قرآن پر عمل کی رہنمائی—اردو یا انگریزی میں دستیاب۔"
+        },
+        syllabus: {
+          en: ["Verse-by-verse explanation and thematic connections", "Historical context (Asbab al-Nuzul) where applicable", "Practical lessons for family life, character, and worship", "Available in Urdu or English in 1-on-1 or small groups (max 4)"],
+          ur: ["آیت بہ آیت تشریح اور آیات کا باہمی ربط", "شانِ نزول اور تاریخی پس منظر", "خاندانی زندگی، اخلاق اور عبادات کے لیے عملی اسباق", "اردو یا انگریزی میں انفرادی یا 4 طلبہ کے گروپ میں دستیاب"]
+        },
+        benefits: {
+          en: ["Deepens understanding beyond literal translation", "Respectful, thoughtful discussion with dedicated teachers", "See our dedicated Quran Tafseer page for full program options"],
+          ur: ["لفظی ترجمے سے بڑھ کر گہرا فہم", "اساتذہ کے ساتھ بامقصد علمی گفتگو", "مکمل تفصیلات کے لیے ہمارا تفسیرِ قرآن صفحہ دیکھیں"]
+        }
+      }
+    };
+
+    let activeCourseSlug = "noorani-qaida";
+    const ACADEMY_CONFIG = { whatsappNumber: "923000000000", email: "info@noorquran-placeholder.org" };
+    const translations = {
+      en: {
+        brand_name: "Noor Quran", brand_sub: "Learning Academy",
+        nav_home: "Home", nav_courses: "Courses", nav_all_courses: "All Courses", nav_learning: "Quran Learning",
+        nav_read_quran: "Read Quran", nav_tafseer: "Quran Tafseer", nav_online: "Online Classes", nav_home_tuition: "Home Tuition",
+        nav_teachers: "Teachers", nav_fees: "Fee Info", nav_about: "About Us", nav_contact: "Contact", nav_cta: "Book Free Trial",
+        nav_dashboard: "Student Dashboard (Planned)", nav_privacy: "Privacy Policy", nav_terms: "Terms & Conditions",
+        back_courses: "Back to All Courses", cd_what_title: "What Students Will Learn", cd_benefits_title: "Key Course Benefits",
+        cd_format_title: "Class Format & Schedule", cd_lbl_days: "Weekly Schedule", cd_val_days: "4 Days / Week",
+        cd_lbl_dur: "Duration", cd_val_dur: "1 Hour (Adjustable)", cd_lbl_mode: "Class Type", cd_val_mode: "1-on-1 or Group (Max 4)",
+        cd_lbl_lang: "Languages", cd_val_lang: "Urdu & English", cd_lbl_teachers: "Teachers", cd_val_teachers: "Male & Female",
+        cd_book_btn: "Book 3-Day Free Trial", cd_fee_btn: "Request Fee Details",
+        footer_brand: "Noor Quran Learning Academy", footer_tagline: "Learn the Quran. Understand the Quran. Live by the Quran.",
+        footer_schedule: "Regular Schedule: 4 days/week (1 hour standard). Fri–Sun off (by mutual arrangement only).",
+        footer_col_academy: "Academy", footer_col_learning: "Quran Learning & Support", footer_contact_title: "Contact & Legal"
+      },
+      ur: {
+        brand_name: "نور قرآن", brand_sub: "لرننگ اکیڈمی",
+        nav_home: "ہوم", nav_courses: "کورسز", nav_all_courses: "تمام کورسز", nav_learning: "تعلیمِ قرآن",
+        nav_read_quran: "قرآن پڑھیں", nav_tafseer: "تفسیرِ قرآن", nav_online: "آن لائن کلاسز", nav_home_tuition: "ہوم ٹیوشن",
+        nav_teachers: "اساتذہ", nav_fees: "فیس کی معلومات", nav_about: "ہمارے بارے میں", nav_contact: "رابطہ", nav_cta: "مفت ٹرائل بک کریں",
+        nav_dashboard: "اسٹوڈنٹ ڈیش بورڈ (زیرِ منصوبہ)", nav_privacy: "پرائیویسی پالیسی", nav_terms: "شرائط و ضوابط",
+        back_courses: "تمام کورسز پر واپس جائیں", cd_what_title: "طلبہ کیا سیکھیں گے", cd_benefits_title: "کورس کے اہم فوائد",
+        cd_format_title: "کلاس کا طریقہ کار اور شیڈول", cd_lbl_days: "ہفتہ وار شیڈول", cd_val_days: "ہفتے میں 4 دن",
+        cd_lbl_dur: "دورانیہ", cd_val_dur: "1 گھنٹہ (قابلِ تبدیلی)", cd_lbl_mode: "کلاس کی قسم", cd_val_mode: "انفرادی یا گروپ (زیادہ سے زیادہ 4)",
+        cd_lbl_lang: "زبانیں", cd_val_lang: "اردو اور انگریزی", cd_lbl_teachers: "اساتذہ", cd_val_teachers: "مرد اور خواتین",
+        cd_book_btn: "3 دن کا مفت ٹرائل بک کریں", cd_fee_btn: "فیس کی تفصیلات معلوم کریں",
+        footer_brand: "نور قرآن لرننگ اکیڈمی", footer_tagline: "قرآن سیکھیں۔ قرآن سمجھیں۔ قرآن کے مطابق زندگی گزاریں۔",
+        footer_schedule: "باقاعدہ شیڈول: ہفتے میں 4 دن (معیاری 1 گھنٹہ)۔ جمعہ تا اتوار چھٹی (باہمی اتفاق سے کلاس ممکن)۔",
+        footer_col_academy: "اکیڈمی", footer_col_learning: "تعلیمِ قرآن اور معاونت", footer_contact_title: "رابطہ اور قانونی امور"
+      }
+    };
+
+    function getCurrentLang() { return document.documentElement.getAttribute('lang') === 'ur' ? 'ur' : 'en'; }
+
+    function renderCourseDetail(slug) {
+      const data = COURSE_DATA[slug] || COURSE_DATA["noorani-qaida"];
+      activeCourseSlug = COURSE_DATA[slug] ? slug : "noorani-qaida";
+      const lang = getCurrentLang();
+      document.getElementById('cd-level').textContent = data.level[lang];
+      document.getElementById('cd-title').textContent = data.title[lang];
+      document.getElementById('cd-summary').textContent = data.summary[lang];
+      document.getElementById('cd-book-btn').setAttribute('href', '../free-trial/FreeTrialBooking.html?course=' + encodeURIComponent(data.bookingValue));
+
+      const sylEl = document.getElementById('cd-syllabus');
+      sylEl.innerHTML = '';
+      data.syllabus[lang].forEach(item => {
+        const li = document.createElement('li');
+        li.className = 'flex items-start gap-2.5';
+        li.innerHTML = '<span class="material-symbols-outlined text-light-primary text-title-md mt-0.5" aria-hidden="true">check_circle</span><span></span>';
+        li.querySelector('span:last-child').textContent = item;
+        sylEl.appendChild(li);
+      });
+
+      const benEl = document.getElementById('cd-benefits');
+      benEl.innerHTML = '';
+      data.benefits[lang].forEach(item => {
+        const li = document.createElement('li');
+        li.className = 'flex items-start gap-2.5';
+        li.innerHTML = '<span class="material-symbols-outlined text-light-secondary text-title-md mt-0.5" aria-hidden="true">verified</span><span></span>';
+        li.querySelector('span:last-child').textContent = item;
+        benEl.appendChild(li);
+      });
+
+      document.querySelectorAll('[data-course-tab]').forEach(btn => {
+        if (btn.getAttribute('data-course-tab') === activeCourseSlug) {
+          btn.className = 'px-3.5 py-1.5 rounded-full border border-light-primary bg-light-primary text-light-on-primary font-label text-label-sm';
+        } else {
+          btn.className = 'px-3.5 py-1.5 rounded-full border border-light-outline-variant bg-light-surface-container-lowest font-label text-label-sm text-light-on-surface-variant hover:border-light-primary';
+        }
+      });
+    }
+
+    function selectCourse(slug) {
+      renderCourseDetail(slug);
+    }
+
+    function setLanguage(lang) {
+      document.documentElement.setAttribute('lang', lang);
+      document.documentElement.setAttribute('dir', lang === 'ur' ? 'rtl' : 'ltr');
+      const enBtn = document.getElementById('lang-en-btn'), urBtn = document.getElementById('lang-ur-btn');
+      if (lang === 'ur') {
+        urBtn.className = 'px-3 py-1 rounded-full font-label text-label-sm bg-light-primary text-light-on-primary transition-colors duration-state-change';
+        enBtn.className = 'px-3 py-1 rounded-full font-label text-label-sm text-light-on-surface-variant hover:text-light-primary transition-colors duration-state-change';
+      } else {
+        enBtn.className = 'px-3 py-1 rounded-full font-label text-label-sm bg-light-primary text-light-on-primary transition-colors duration-state-change';
+        urBtn.className = 'px-3 py-1 rounded-full font-label text-label-sm text-light-on-surface-variant hover:text-light-primary transition-colors duration-state-change';
+      }
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) el.textContent = translations[lang][key];
+      });
+      renderCourseDetail(activeCourseSlug);
+      try { localStorage.setItem('noor_lang', lang); } catch (e) {}
+    }
+
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu'), btn = document.getElementById('mobile-menu-toggle');
+      const isHidden = menu.classList.contains('hidden');
+      menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+    }
+
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const qCourse = params.get('course');
+      if (qCourse && COURSE_DATA[qCourse]) activeCourseSlug = qCourse;
+    } catch (e) {}
+    try { if (localStorage.getItem('noor_lang') === 'ur') setLanguage('ur'); } catch (e) {}
+    renderCourseDetail(activeCourseSlug);
+    document.querySelectorAll('[data-academy-wa]').forEach(el => el.setAttribute('href', 'https://wa.me/' + ACADEMY_CONFIG.whatsappNumber));
+    document.querySelectorAll('[data-academy-email]').forEach(el => el.setAttribute('href', 'mailto:' + ACADEMY_CONFIG.email));
+  </script>
+
+  <!-- Floating AI Assistant -->
+  <div id="ai-assistant-root" class="fixed bottom-5 right-5 z-50 flex flex-col items-end gap-3" dir="ltr">
+    <section id="ai-chat-panel" role="dialog" aria-label="Noor Quran AI Assistant" aria-hidden="true" class="hidden w-[calc(100vw-2.5rem)] sm:w-96 bg-light-surface-container-lowest border border-light-outline-variant rounded-xl overflow-hidden flex flex-col">
+      <header class="bg-light-primary text-light-on-primary px-4 py-3 flex items-center justify-between gap-3">
+        <div class="flex items-center gap-2.5">
+          <span class="w-8 h-8 rounded-full bg-accent-soft text-light-secondary flex items-center justify-center shrink-0" aria-hidden="true">
+            <span class="material-symbols-outlined text-title-md">smart_toy</span>
+          </span>
+          <div class="flex flex-col">
+            <span class="font-title text-title-md leading-tight" id="ai-title">Noor Quran AI Assistant</span>
+            <span class="text-label-sm text-light-on-primary-container leading-tight" id="ai-subtitle">English &amp; اردو Support</span>
+          </div>
+        </div>
+        <button type="button" onclick="toggleAiChat()" aria-label="Close AI Assistant" class="w-8 h-8 rounded-full flex items-center justify-center hover:bg-light-primary-container transition-colors duration-state-change">
+          <span class="material-symbols-outlined text-title-md" aria-hidden="true">close</span>
+        </button>
+      </header>
+      <div id="ai-messages" class="p-4 bg-light-surface flex flex-col gap-3 max-h-72 overflow-y-auto">
+        <div class="bg-light-surface-container-lowest border border-light-outline-variant rounded-lg p-3 text-body-md text-light-on-surface" id="ai-welcome-msg">
+          Assalamu Alaikum! Welcome to Noor Quran Learning Academy. How can I help you today?
+        </div>
+      </div>
+      <div class="px-4 py-2.5 bg-light-surface-container-low border-t border-light-outline-variant flex flex-col gap-2">
+        <span class="text-label-sm font-label text-light-on-surface-variant" id="ai-suggest-label">Suggested questions:</span>
+        <div id="ai-suggestions" class="flex flex-wrap gap-1.5">
+          <button type="button" onclick="askSuggested(&#39;courses&#39;)" class="text-start px-2.5 py-1 rounded-full bg-light-surface-container-lowest border border-light-outline-variant text-label-sm text-light-primary hover:border-light-primary transition-colors duration-state-change" data-ai-q="courses">Which Quran courses do you offer?</button>
+          <button type="button" onclick="askSuggested(&#39;teachers&#39;)" class="text-start px-2.5 py-1 rounded-full bg-light-surface-container-lowest border border-light-outline-variant text-label-sm text-light-primary hover:border-light-primary transition-colors duration-state-change" data-ai-q="teachers">Do you have male and female teachers?</button>
+          <button type="button" onclick="askSuggested(&#39;trial&#39;)" class="text-start px-2.5 py-1 rounded-full bg-light-surface-container-lowest border border-light-outline-variant text-label-sm text-light-primary hover:border-light-primary transition-colors duration-state-change" data-ai-q="trial">How can I book a free trial?</button>
+          <button type="button" onclick="askSuggested(&#39;timings&#39;)" class="text-start px-2.5 py-1 rounded-full bg-light-surface-container-lowest border border-light-outline-variant text-label-sm text-light-primary hover:border-light-primary transition-colors duration-state-change" data-ai-q="timings">What are your class timings?</button>
+          <button type="button" onclick="askSuggested(&#39;apps&#39;)" class="text-start px-2.5 py-1 rounded-full bg-light-surface-container-lowest border border-light-outline-variant text-label-sm text-light-primary hover:border-light-primary transition-colors duration-state-change" data-ai-q="apps">Which apps do you use for online classes?</button>
+          <button type="button" onclick="askSuggested(&#39;fees&#39;)" class="text-start px-2.5 py-1 rounded-full bg-light-surface-container-lowest border border-light-outline-variant text-label-sm text-light-primary hover:border-light-primary transition-colors duration-state-change" data-ai-q="fees">How can I get fee details?</button>
+        </div>
+      </div>
+      <div class="px-4 py-2.5 bg-light-surface-container-lowest border-t border-light-outline-variant flex flex-wrap items-center gap-2">
+        <a href="../free-trial/FreeTrialBooking.html" id="ai-action-trial" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-DEFAULT bg-light-primary text-light-on-primary font-label text-label-sm hover:bg-light-primary-container transition-colors duration-state-change">
+          <span class="material-symbols-outlined text-label-lg" aria-hidden="true">event_available</span>
+          <span>Book Free Trial</span>
+        </a>
+        <a href="https://wa.me/923000000000" target="_blank" rel="noopener noreferrer" data-academy-wa="true" id="ai-action-wa" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-DEFAULT bg-accent-soft text-light-secondary border border-accent font-label text-label-sm hover:bg-light-surface-container-low transition-colors duration-state-change">
+          <span class="material-symbols-outlined text-label-lg" aria-hidden="true">chat</span>
+          <span>WhatsApp</span>
+        </a>
+        <a href="mailto:info@noorquran-placeholder.org" data-academy-email="true" id="ai-action-email" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-DEFAULT bg-light-surface-container-low text-light-on-surface border border-light-outline-variant font-label text-label-sm hover:border-light-primary transition-colors duration-state-change">
+          <span class="material-symbols-outlined text-label-lg" aria-hidden="true">mail</span>
+          <span>Email</span>
+        </a>
+      </div>
+      <form onsubmit="handleAiSubmit(event)" class="p-3 bg-light-surface-container-lowest border-t border-light-outline-variant flex items-center gap-2">
+        <input id="ai-input" type="text" placeholder="Type your question..." aria-label="Ask AI Assistant" class="flex-1 rounded-DEFAULT border border-light-outline-variant bg-light-surface px-3 py-2 text-body-md text-light-on-surface focus:border-light-primary focus:ring-1 focus:ring-light-primary">
+        <button type="submit" aria-label="Send message" class="inline-flex items-center justify-center w-10 h-10 rounded-DEFAULT bg-light-primary text-light-on-primary hover:bg-light-primary-container transition-colors duration-state-change shrink-0">
+          <span class="material-symbols-outlined text-title-md" aria-hidden="true">send</span>
+        </button>
+      </form>
+    </section>
+    <button type="button" id="ai-toggle-btn" onclick="toggleAiChat()" aria-expanded="false" aria-controls="ai-chat-panel" class="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-light-primary text-light-on-primary border border-accent font-label text-label-lg hover:bg-light-primary-container focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent transition-colors duration-state-change">
+      <span class="material-symbols-outlined text-title-lg" aria-hidden="true">forum</span>
+      <span id="ai-fab-label">Ask AI Assistant</span>
+    </button>
+  </div>
+  <script>
+    const aiCopy = {
+      en: {
+        fab: "Ask AI Assistant", title: "Noor Quran AI Assistant", subtitle: "English & اردو Support",
+        welcome: "Assalamu Alaikum! Welcome to Noor Quran Learning Academy. How can I help you today?",
+        suggestLabel: "Suggested questions:", placeholder: "Type your question...", trialBtn: "Book Free Trial", waBtn: "WhatsApp", emailBtn: "Email",
+        q: { courses: "Which Quran courses do you offer?", teachers: "Do you have male and female teachers?", trial: "How can I book a free trial?", timings: "What are your class timings?", apps: "Which apps do you use for online classes?", fees: "How can I get fee details?" },
+        a: {
+          courses: "We offer 7 courses in Urdu & English: Noorani Qaida, Nazra Quran, Hifz-ul-Quran, Quran with Tajweed (separate or with Nazra), Quran with Urdu Translation, Quran with English Translation, and Quran Tafseer.",
+          teachers: "Yes! We currently have 1 male teacher and 2 female teachers. You can select your preferred teacher in the Free Trial Booking form. Teacher qualifications and profiles are placeholders until real details are added.",
+          trial: "You can request a 3-day free trial using the Book Free Trial button below. Please note that submitting the form does not automatically confirm the booking—our academy will contact you to confirm teacher availability and schedule.",
+          timings: "Regular classes run 4 days per week for 1 hour (shorter or longer durations can be requested). Friday, Saturday, and Sunday are regular off days, though classes may be arranged if both student and teacher agree.",
+          apps: "We conduct online classes via WhatsApp, IMO, Zoom, and Google Meet. Class details are shared directly once your schedule is confirmed by the academy.",
+          fees: "We do not display fixed fees online. Fees depend on the course, 1-on-1 or group format (max 4 students), student's country, weekly schedule, and class duration. Please contact us via WhatsApp or Email for fee details.",
+          fallback: "I cannot confirm specific fees, teacher credentials, or live slot availability here. Please contact Noor Quran Learning Academy directly via WhatsApp or Email below, and our coordinator will be happy to assist you."
+        }
+      },
+      ur: {
+        fab: "اے آئی اسسٹنٹ سے پوچھیں", title: "نور قرآن اے آئی اسسٹنٹ", subtitle: "انگریزی اور اردو سپورٹ",
+        welcome: "السلام علیکم! نور قرآن لرننگ اکیڈمی میں خوش آمدید۔ آج میں آپ کی کیا مدد کر سکتا ہوں؟",
+        suggestLabel: "تجویز کردہ سوالات:", placeholder: "اپنا سوال لکھیں...", trialBtn: "مفت ٹرائل بک کریں", waBtn: "واٹس ایپ", emailBtn: "ای میل",
+        q: { courses: "آپ کون سے قرآن کورسز کراتے ہیں؟", teachers: "کیا آپ کے پاس مرد اور خواتین اساتذہ ہیں؟", trial: "میں مفت ٹرائل کیسے بک کر سکتا ہوں؟", timings: "آپ کی کلاسز کے اوقات کیا ہیں؟", apps: "آن لائن کلاسز کے لیے کون سی ایپس استعمال ہوتی ہیں؟", fees: "فیس کی تفصیلات کیسے معلوم ہوں گی؟" },
+        a: {
+          courses: "ہم اردو اور انگریزی میں 7 کورسز کراتے ہیں: نورانی قاعدہ، ناظرہ قرآن، حفظِ قرآن، قرآن مع تجوید (الگ یا ناظرہ کے ساتھ)، اردو ترجمہ، انگریزی ترجمہ اور تفسیرِ قرآن۔",
+          teachers: "جی ہاں! ہمارے پاس فی الحال 1 مرد استاد اور 2 خواتین اساتذہ موجود ہیں۔ آپ مفت ٹرائل فارم میں اپنی پسند کے استاد کا انتخاب کر سکتے ہیں۔",
+          trial: "آپ نیچے دیے گئے 'مفت ٹرائل بک کریں' بٹن سے 3 دن کے مفت ٹرائل کی درخواست دے سکتے ہیں۔ فارم جمع کرانے سے بکنگ خودکار طور پر پکی نہیں ہوتی، اکیڈمی دستیابی کی تصدیق کے لیے رابطہ کرے گی۔",
+          timings: "باقاعدہ کلاسز ہفتے میں 4 دن اور معیاری دورانیہ 1 گھنٹہ ہے۔ جمعہ، ہفتہ اور اتوار عام تعطیل ہوتی ہے، تاہم باہمی اتفاق سے کلاس رکھی جا سکتی ہے۔",
+          apps: "آن لائن کلاسز واٹس ایپ، ایمو، زوم اور گوگل میٹ پر ہوتی ہیں۔ شیڈول کی تصدیق کے بعد کلاس کی تفصیلات آپ کو بھیج دی جائیں گی۔",
+          fees: "ہم مقررہ فیس شائع نہیں کرتے۔ فیس کورس، انفرادی یا گروپ کلاس، ملک، ہفتہ وار شیڈول اور دورانیے پر منحصر ہے۔ تفصیلات کے لیے واٹس ایپ یا ای میل پر رابطہ کریں۔",
+          fallback: "میں یہاں فیس، اساتذہ کی اسناد یا وقت کی دستیابی کی حتمی تصدیق نہیں کر سکتا۔ براہ کرم نیچے واٹس ایپ یا ای میل کے ذریعے اکیڈمی سے براہِ راست رابطہ کریں۔"
+        }
+      }
+    };
+    function syncAiLanguage(lang) {
+      const c = aiCopy[lang] || aiCopy.en;
+      const panel = document.getElementById('ai-chat-panel');
+      if (panel) panel.setAttribute('dir', lang === 'ur' ? 'rtl' : 'ltr');
+      document.getElementById('ai-fab-label').textContent = c.fab;
+      document.getElementById('ai-title').textContent = c.title;
+      document.getElementById('ai-subtitle').textContent = c.subtitle;
+      document.getElementById('ai-welcome-msg').textContent = c.welcome;
+      document.getElementById('ai-suggest-label').textContent = c.suggestLabel;
+      document.getElementById('ai-input').placeholder = c.placeholder;
+      document.querySelector('#ai-action-trial span:last-child').textContent = c.trialBtn;
+      document.querySelector('#ai-action-wa span:last-child').textContent = c.waBtn;
+      document.querySelector('#ai-action-email span:last-child').textContent = c.emailBtn;
+      document.querySelectorAll('[data-ai-q]').forEach(btn => {
+        const key = btn.getAttribute('data-ai-q');
+        if (c.q[key]) btn.textContent = c.q[key];
+      });
+    }
+    function toggleAiChat() {
+      const panel = document.getElementById('ai-chat-panel'), btn = document.getElementById('ai-toggle-btn');
+      const isHidden = panel.classList.contains('hidden');
+      panel.classList.toggle('hidden');
+      panel.setAttribute('aria-hidden', isHidden ? 'false' : 'true');
+      btn.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+    }
+    function appendAiMessage(text, isUser) {
+      const box = document.getElementById('ai-messages'), msg = document.createElement('div');
+      msg.className = isUser ? 'self-end max-w-[85%] bg-light-primary text-light-on-primary rounded-lg px-3.5 py-2.5 text-body-md' : 'self-start max-w-[90%] bg-light-surface-container-lowest border border-light-outline-variant rounded-lg px-3.5 py-2.5 text-body-md text-light-on-surface';
+      msg.textContent = text;
+      box.appendChild(msg);
+      box.scrollTop = box.scrollHeight;
+    }
+    function askSuggested(key) {
+      const c = aiCopy[getCurrentLang()];
+      appendAiMessage(c.q[key], true);
+      setTimeout(() => appendAiMessage(c.a[key], false), 150);
+    }
+    function handleAiSubmit(e) {
+      e.preventDefault();
+      const input = document.getElementById('ai-input'), val = input.value.trim();
+      if (!val) return;
+      input.value = '';
+      appendAiMessage(val, true);
+      const lower = val.toLowerCase(), c = aiCopy[getCurrentLang()];
+      let reply = c.a.fallback;
+      if (lower.includes('course') || lower.includes('qaida') || lower.includes('nazra') || lower.includes('hifz') || lower.includes('tajweed') || lower.includes('tafseer') || val.includes('کورس')) reply = c.a.courses;
+      else if (lower.includes('teacher') || lower.includes('male') || lower.includes('female') || val.includes('استاد') || val.includes('اساتذہ')) reply = c.a.teachers;
+      else if (lower.includes('trial') || lower.includes('book') || val.includes('ٹرائل')) reply = c.a.trial;
+      else if (lower.includes('time') || lower.includes('schedule') || lower.includes('day') || lower.includes('hour') || val.includes('وقت') || val.includes('اوقات')) reply = c.a.timings;
+      else if (lower.includes('app') || lower.includes('zoom') || lower.includes('whatsapp') || lower.includes('imo') || lower.includes('meet') || val.includes('ایپ')) reply = c.a.apps;
+      else if (lower.includes('fee') || lower.includes('price') || lower.includes('cost') || val.includes('فیس')) reply = c.a.fees;
+      setTimeout(() => appendAiMessage(reply, false), 180);
+    }
+    const _origSetLang = window.setLanguage;
+    window.setLanguage = function(lang) { if (_origSetLang) _origSetLang(lang); syncAiLanguage(lang); };
+    syncAiLanguage(getCurrentLang());
+  </script>
+
+
+</body></html>
