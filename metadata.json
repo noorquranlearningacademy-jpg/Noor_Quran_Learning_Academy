@@ -1,0 +1,6 @@
+{
+  "name": "Noor Quran Learning Academy",
+  "description": "Structured online Quran learning academy offering Noorani Qaida, Nazra, Hifz, Tajweed, Translation, and Tafseer in English and Urdu with male and female teachers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
