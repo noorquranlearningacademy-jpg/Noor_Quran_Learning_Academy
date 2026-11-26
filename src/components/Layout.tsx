@@ -90,13 +90,15 @@ export function Layout({ children }: { children: React.ReactNode }) {
             className="flex items-center gap-3 shrink-0"
           >
             <span
-              className="w-10 h-10 rounded-md bg-light-primary text-light-on-primary flex items-center justify-center shrink-0"
+              className="w-11 h-11 rounded-md overflow-hidden border border-accent bg-light-primary flex items-center justify-center shrink-0"
               aria-hidden="true"
             >
-              <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
-                <polygon points="12,2 14.9,8.1 21.5,9 16.7,13.6 17.9,20.2 12,17 6.1,20.2 7.3,13.6 2.5,9 9.1,8.1" />
-                <circle cx="12" cy="12" r="2.2" fill="currentColor" stroke="none" />
-              </svg>
+              <img
+                src="/src/assets/images/noor_quran_logo_1795678163454.jpg"
+                alt=""
+                referrerPolicy="no-referrer"
+                className="w-full h-full object-cover"
+              />
             </span>
             <span className="flex flex-col">
               <span className="font-headline text-title-md text-light-primary leading-tight">

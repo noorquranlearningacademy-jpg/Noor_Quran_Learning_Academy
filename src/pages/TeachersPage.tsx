@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
+import { SafeImage } from '../components/SafeImage';
 import { ROUTES } from '../data/academy';
 
 type TeacherFilter = 'all' | 'male' | 'female';
@@ -13,6 +14,7 @@ interface TeacherPlaceholder {
   agesKey: string;
   ctaKey: string;
   teacherQuery: 'Male' | 'Female';
+  photo?: string;
 }
 
 const TEACHERS: TeacherPlaceholder[] = [
@@ -25,6 +27,7 @@ const TEACHERS: TeacherPlaceholder[] = [
     agesKey: 'val_ages_all',
     ctaKey: 'req_male',
     teacherQuery: 'Male',
+    photo: '/src/assets/images/male_quran_teacher_1795674017167.jpg',
   },
   {
     id: 'female-1',
@@ -119,12 +122,22 @@ export function TeachersPage() {
                 className="bg-light-surface-container-lowest border border-light-outline-variant rounded-lg p-6 flex flex-col justify-between gap-6 h-full"
               >
                 <div className="flex flex-col gap-4">
-                  <div className="w-full h-44 rounded-md bg-light-surface-container-low border border-dashed border-light-outline-variant flex flex-col items-center justify-center gap-2 text-light-on-surface-variant">
-                    <span className="material-symbols-outlined text-headline-lg" aria-hidden="true">
-                      person
-                    </span>
-                    <span className="text-label-sm font-label">{t('photo_ph')}</span>
-                  </div>
+                  {teacher.photo ? (
+                    <div className="w-full h-44 rounded-md overflow-hidden border border-light-outline-variant bg-light-surface-container-low">
+                      <SafeImage
+                        src={teacher.photo}
+                        alt={`${t(teacher.nameKey)} — ${t(teacher.badgeKey)}`}
+                        className="w-full h-full object-cover object-[center_18%]"
+                      />
+                    </div>
+                  ) : (
+                    <div className="w-full h-44 rounded-md bg-light-surface-container-low border border-dashed border-light-outline-variant flex flex-col items-center justify-center gap-2 text-light-on-surface-variant">
+                      <span className="material-symbols-outlined text-headline-lg" aria-hidden="true">
+                        person
+                      </span>
+                      <span className="text-label-sm font-label">{t('photo_ph')}</span>
+                    </div>
+                  )}
                   <header className="flex flex-col gap-1">
                     <span
                       className={
