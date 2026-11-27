@@ -5,6 +5,7 @@ import {
   MissingDatabaseConfigError,
   type ContactInquiryRecord,
   type HomeTuitionRecord,
+  type StorageMode,
   type TrialBookingRecord,
 } from './db.js';
 import { sendAcademyNotificationEmail } from './emailService.js';
@@ -67,9 +68,15 @@ export async function handleTrialBooking(rawBody: unknown): Promise<{
   }
 
   try {
-    const storageMode = await insertTrialBooking(record);
+    let storageMode: StorageMode = 'local-file';
+    try {
+      storageMode = await insertTrialBooking(record);
+    } catch (dbErr) {
+      console.warn('[api/bookings] DB storage not active, continuing to email notification:', dbErr);
+    }
+
     const emailResult = await sendAcademyNotificationEmail({
-      subject: `[Noor Quran] New 3-Day Free Trial Request (${record.id})`,
+      subject: `[Noor Quran] New 3-Day Free Trial Request (${record.id}) - ${record.studentName}`,
       replyTo: record.email,
       text: [
         `Reference ID: ${record.id}`,
@@ -102,26 +109,14 @@ export async function handleTrialBooking(rawBody: unknown): Promise<{
       },
     };
   } catch (err) {
-    if (err instanceof MissingDatabaseConfigError) {
-      return {
-        status: 503,
-        json: {
-          code: 'DATABASE_NOT_CONFIGURED',
-          error:
-            lang === 'ur'
-              ? 'ڈیٹابیس ابھی ترتیب نہیں دیا گیا۔ براہ کرم واٹس ایپ یا ای میل پر براہِ راست رابطہ کریں۔'
-              : err.message,
-        },
-      };
-    }
-    console.error('[api/bookings] Error saving trial booking:', err);
+    console.error('[api/bookings] Error processing trial booking:', err);
     return {
       status: 500,
       json: {
         code: 'SERVER_ERROR',
         error:
           lang === 'ur'
-            ? 'درخواست محفوظ کرنے میں مسئلہ پیش آیا۔ براہ کرم دوبارہ کوشش کریں یا واٹس ایپ پر رابطہ کریں۔'
+            ? 'درخواست محفوظ کرنے میں مسئلہ پیش آیا۔ براہ کرم واٹس ایپ پر رابطہ کریں۔'
             : 'Unable to save your booking right now. Please try again or contact us via WhatsApp.',
       },
     };
@@ -158,9 +153,15 @@ export async function handleHomeTuitionInquiry(rawBody: unknown): Promise<{
   }
 
   try {
-    const storageMode = await insertHomeTuitionInquiry(record);
+    let storageMode: StorageMode = 'local-file';
+    try {
+      storageMode = await insertHomeTuitionInquiry(record);
+    } catch (dbErr) {
+      console.warn('[api/home-tuition] DB storage not active, continuing to email notification:', dbErr);
+    }
+
     const emailResult = await sendAcademyNotificationEmail({
-      subject: `[Noor Quran] New Home Tuition Inquiry (${record.id})`,
+      subject: `[Noor Quran] New Home Tuition Inquiry (${record.id}) - ${record.name}`,
       text: [
         `Reference ID: ${record.id}`,
         `Submitted At: ${record.submittedAt}`,
@@ -183,13 +184,7 @@ export async function handleHomeTuitionInquiry(rawBody: unknown): Promise<{
       },
     };
   } catch (err) {
-    if (err instanceof MissingDatabaseConfigError) {
-      return {
-        status: 503,
-        json: { code: 'DATABASE_NOT_CONFIGURED', error: err.message },
-      };
-    }
-    console.error('[api/home-tuition] Error saving inquiry:', err);
+    console.error('[api/home-tuition] Error processing inquiry:', err);
     return {
       status: 500,
       json: {
@@ -233,9 +228,15 @@ export async function handleContactInquiry(rawBody: unknown): Promise<{
   }
 
   try {
-    const storageMode = await insertContactInquiry(record);
+    let storageMode: StorageMode = 'local-file';
+    try {
+      storageMode = await insertContactInquiry(record);
+    } catch (dbErr) {
+      console.warn('[api/contact] DB storage not active, continuing to email notification:', dbErr);
+    }
+
     const emailResult = await sendAcademyNotificationEmail({
-      subject: `[Noor Quran] New Contact Inquiry: ${record.topic} (${record.id})`,
+      subject: `[Noor Quran] New Contact Inquiry: ${record.topic} (${record.id}) - ${record.name}`,
       replyTo: record.contact.includes('@') ? record.contact : undefined,
       text: [
         `Reference ID: ${record.id}`,
@@ -259,13 +260,7 @@ export async function handleContactInquiry(rawBody: unknown): Promise<{
       },
     };
   } catch (err) {
-    if (err instanceof MissingDatabaseConfigError) {
-      return {
-        status: 503,
-        json: { code: 'DATABASE_NOT_CONFIGURED', error: err.message },
-      };
-    }
-    console.error('[api/contact] Error saving inquiry:', err);
+    console.error('[api/contact] Error processing inquiry:', err);
     return {
       status: 500,
       json: {
