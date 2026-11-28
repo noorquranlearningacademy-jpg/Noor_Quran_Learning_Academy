@@ -58,15 +58,28 @@ export function Layout({ children }: { children: React.ReactNode }) {
           <div className="max-w-[1200px] mx-auto px-gutter-md md:px-page-margin py-1.5 flex flex-wrap items-center justify-between gap-x-4 gap-y-1">
             <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
               <a
-                href={`https://wa.me/${ACADEMY_CONFIG.whatsappNumber}`}
+                href={`https://wa.me/${ACADEMY_CONFIG.phoneNumbers[0].number}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 hover:underline"
+                title="Call or WhatsApp primary contact"
               >
                 <span className="material-symbols-outlined text-label-lg" aria-hidden="true">
                   call
                 </span>
-                <span dir="ltr">{ACADEMY_CONFIG.whatsappDisplay}</span>
+                <span dir="ltr">{ACADEMY_CONFIG.phoneNumbers[0].display}</span>
+              </a>
+              <a
+                href={`https://wa.me/${ACADEMY_CONFIG.phoneNumbers[1].number}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 hover:underline"
+                title="Call or WhatsApp secondary contact"
+              >
+                <span className="material-symbols-outlined text-label-lg" aria-hidden="true">
+                  call
+                </span>
+                <span dir="ltr">{ACADEMY_CONFIG.phoneNumbers[1].display}</span>
               </a>
               <a
                 href={`mailto:${ACADEMY_CONFIG.email}`}
@@ -483,22 +496,56 @@ export function Layout({ children }: { children: React.ReactNode }) {
             </a>
           </div>
 
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2.5">
             <h3 className="font-title text-title-md text-light-on-surface">{t('footer_contact_title')}</h3>
-            <a
-              href={`https://wa.me/${ACADEMY_CONFIG.whatsappNumber}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-body-md text-light-on-surface-variant hover:text-light-primary"
-            >
-              {lang === 'ur' ? 'واٹس ایپ:' : 'WhatsApp:'}{' '}
-              <span dir="ltr">{ACADEMY_CONFIG.whatsappDisplay}</span>
-            </a>
+            <div className="flex flex-col gap-1.5 text-body-md text-light-on-surface-variant">
+              <span className="text-label-sm font-semibold text-light-primary">
+                {lang === 'ur' ? 'رابطہ نمبرز (Call / WhatsApp):' : 'Contact Numbers (Call / WhatsApp):'}
+              </span>
+              <a
+                href={`https://wa.me/${ACADEMY_CONFIG.phoneNumbers[0].number}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-light-primary inline-flex items-center gap-1.5 transition-colors"
+                title="Contact Primary Number"
+              >
+                <span className="material-symbols-outlined text-label-md text-emerald-600" aria-hidden="true">
+                  call
+                </span>
+                <span dir="ltr">1. {ACADEMY_CONFIG.phoneNumbers[0].display}</span>
+              </a>
+              <a
+                href={`https://wa.me/${ACADEMY_CONFIG.phoneNumbers[1].number}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-light-primary inline-flex items-center gap-1.5 transition-colors"
+                title="Contact Second Number"
+              >
+                <span className="material-symbols-outlined text-label-md text-emerald-600" aria-hidden="true">
+                  call
+                </span>
+                <span dir="ltr">2. {ACADEMY_CONFIG.phoneNumbers[1].display}</span>
+              </a>
+              <a
+                href={`https://wa.me/${ACADEMY_CONFIG.phoneNumbers[2].number}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-light-primary inline-flex items-center gap-1.5 transition-colors"
+                title="Contact Third Number"
+              >
+                <span className="material-symbols-outlined text-label-md text-emerald-600" aria-hidden="true">
+                  call
+                </span>
+                <span dir="ltr">3. {ACADEMY_CONFIG.phoneNumbers[2].display}</span>
+              </a>
+            </div>
             <a
               href={`mailto:${ACADEMY_CONFIG.email}`}
-              className="text-body-md text-light-on-surface-variant hover:text-light-primary"
+              className="text-body-md text-light-on-surface-variant hover:text-light-primary inline-flex items-center gap-1.5 mt-0.5"
             >
-              {lang === 'ur' ? 'ای میل:' : 'Email:'}{' '}
+              <span className="material-symbols-outlined text-label-md" aria-hidden="true">
+                mail
+              </span>
               <span dir="ltr">{ACADEMY_CONFIG.email}</span>
             </a>
             <a
@@ -522,9 +569,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
             >
               {t('nav_terms')}
             </a>
-            <p className="text-label-sm text-light-on-surface-variant pt-1">
-              {lang === 'ur' ? 'سوشل میڈیا لنکس: جلد تصدیق کی جائے گی' : 'Social Media: To be confirmed'}
-            </p>
           </div>
         </div>
       </footer>

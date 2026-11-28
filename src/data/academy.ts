@@ -3,6 +3,15 @@ export type Language = 'en' | 'ur';
 export const ACADEMY_CONFIG = {
   whatsappNumber: (import.meta.env.VITE_ACADEMY_WHATSAPP || '923314446892').replace(/[^\d]/g, ''),
   whatsappDisplay: import.meta.env.VITE_ACADEMY_WHATSAPP_DISPLAY || '+92 331 444 6892',
+  whatsappNumber2: '923344928042',
+  whatsappDisplay2: '+92 334 492 8042',
+  whatsappNumber3: '923206085271',
+  whatsappDisplay3: '+92 320 608 5271',
+  phoneNumbers: [
+    { number: '923314446892', display: '+92 331 444 6892', raw: '03314446892' },
+    { number: '923344928042', display: '+92 334 492 8042', raw: '03344928042' },
+    { number: '923206085271', display: '+92 320 608 5271', raw: '03206085271' },
+  ],
   email: import.meta.env.VITE_ACADEMY_EMAIL || 'noorquranlearningacademy@gmail.com',
   provisionalLocation: {
     en: 'Sialkot, Pakistan (Please confirm location before launch)',
@@ -39,8 +48,9 @@ export const QURAN_READER_CONFIG = {
   },
 } as const;
 
-export function getWhatsappUrl(prefilledText?: string): string {
-  const base = `https://wa.me/${ACADEMY_CONFIG.whatsappNumber}`;
+export function getWhatsappUrl(prefilledText?: string, phoneNumber?: string): string {
+  const num = phoneNumber ? phoneNumber.replace(/[^\d]/g, '') : ACADEMY_CONFIG.whatsappNumber;
+  const base = `https://wa.me/${num}`;
   if (!prefilledText) return base;
   return `${base}?text=${encodeURIComponent(prefilledText)}`;
 }

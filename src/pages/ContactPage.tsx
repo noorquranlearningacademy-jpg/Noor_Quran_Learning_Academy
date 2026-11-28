@@ -131,25 +131,29 @@ export function ContactPage() {
           </div>
 
           <div className="flex flex-col gap-3">
-            <a
-              href={getWhatsappUrl(
-                lang === 'ur'
-                  ? 'السلام علیکم! میں نور قرآن لرننگ اکیڈمی کے بارے میں معلومات حاصل کرنا چاہتا/چاہتی ہوں۔'
-                  : 'Assalamu Alaikum! I would like to inquire about Noor Quran Learning Academy.'
-              )}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-DEFAULT bg-light-primary text-light-on-primary font-label text-label-lg hover:bg-light-primary-container transition-colors duration-state-change"
-            >
-              <span className="material-symbols-outlined text-title-lg" aria-hidden="true">
-                chat
-              </span>
-              <span>
-                {lang === 'ur'
-                  ? `واٹس ایپ: ${ACADEMY_CONFIG.whatsappDisplay}`
-                  : `WhatsApp: ${ACADEMY_CONFIG.whatsappDisplay}`}
-              </span>
-            </a>
+            {ACADEMY_CONFIG.phoneNumbers.map((phone, idx) => (
+              <a
+                key={phone.number}
+                href={getWhatsappUrl(
+                  lang === 'ur'
+                    ? 'السلام علیکم! میں نور قرآن لرننگ اکیڈمی کے بارے میں معلومات حاصل کرنا چاہتا/چاہتی ہوں۔'
+                    : 'Assalamu Alaikum! I would like to inquire about Noor Quran Learning Academy.',
+                  phone.number
+                )}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-DEFAULT bg-light-primary text-light-on-primary font-label text-label-lg hover:bg-light-primary-container transition-colors duration-state-change"
+              >
+                <span className="material-symbols-outlined text-title-lg" aria-hidden="true">
+                  chat
+                </span>
+                <span>
+                  {lang === 'ur'
+                    ? `رابطہ نمبر ${idx + 1} (واٹس ایپ): ${phone.display}`
+                    : `Contact ${idx + 1} (WhatsApp): ${phone.display}`}
+                </span>
+              </a>
+            ))}
 
             <a
               href={`mailto:${ACADEMY_CONFIG.email}`}
